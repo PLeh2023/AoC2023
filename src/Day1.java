@@ -24,7 +24,7 @@ public class Day1 {
             FileReader fileReader = new FileReader(file);
             //buffering the content of the file for line reading
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-
+            //differentiate between both problems
             String line;
             if (choice == 1){
                 while((line = bufferedReader.readLine()) != null ){
