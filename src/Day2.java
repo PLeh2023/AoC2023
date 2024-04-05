@@ -7,7 +7,7 @@ public class Day2 {
         //              Then adding all game IDs like "Game 5" would be 5 together
         //2. Problem:   Finding in each game the maximum amount of cubes for any colour and
         //              then multiplying them together. The game number is not important now.
-
+        //valid numbers are 1 and 2 which are representing the problems
         int sum = input(1);
         int pow = input(2);
         System.out.println("First Problem: " + sum);
