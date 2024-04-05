@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class Day4 {
     public static void main(String[] args) throws IOException {
-        //1. Problem: Adding up all Points per card together. Starting with 1,2,3,8,...
+        //1. Problem: Adding up all Points per card together. Starting with 1,2,4,8,...
         //2. Problem: Adding up the amount of card we own per card.
         //            Every win adds another card to a further playable card.
         //The exceptions are not handled in this code
@@ -21,6 +21,7 @@ public class Day4 {
         FileReader fileReader = new FileReader(file);
         //buffering the content of the file for line reading
         BufferedReader bufferedReader = new BufferedReader(fileReader);
+        //differentiate between both problems
         if(choice == 1) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
