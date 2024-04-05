@@ -50,9 +50,9 @@ public class Day4 {
         String[] winningNumbers = split[1].split(",");
         String[] numbers = split[2].split(",");
         //finding the matches and getting the right amount of points for that
-        for(int i = 0; i < winningNumbers.length; i++){
-            for (int j = 0; j < numbers.length; j++) {
-                if (winningNumbers[i].equals(numbers[j])) {
+        for (String winningNumber : winningNumbers) {
+            for (String number : numbers) {
+                if (winningNumber.equals(number)) {
                     if (points == 0) {
                         points = 1;
                     } else {
@@ -87,9 +87,9 @@ public class Day4 {
             String[] winningNumbers = split[1].split(",");
             String[] numbers = split[2].split(",");
             //finding only the matches
-            for (int i = 0; i < winningNumbers.length; i++) {
-                for (int j = 0; j < numbers.length; j++) {
-                    if (winningNumbers[i].equals(numbers[j])) {
+            for (String winningNumber : winningNumbers) {
+                for (String number : numbers) {
+                    if (winningNumber.equals(number)) {
                         wins += 1;
                     }
                 }
@@ -108,8 +108,8 @@ public class Day4 {
             wins = 0;
         }
         //sum up all cards
-        for(int y = 0; y < cardCount.length; y++){
-            sumOfCards += cardCount[y];
+        for (int i : cardCount) {
+            sumOfCards += i;
         }
         return sumOfCards;
     }
