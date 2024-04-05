@@ -16,10 +16,14 @@ public class Day2 {
     public static int input(int choice){
         int sum = 0;
         try {
+            //selecting of the file
             File file = new File("Inputs/Day2_Input");
+            //reading of the file
             FileReader fileReader = new FileReader(file);
+            //buffering the content of the file for line reading
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String line;
+            //differentiate between both problems
             if(choice == 1) {
                 while ((line = bufferedReader.readLine()) != null) {
                     line = normalizeInput(line);
