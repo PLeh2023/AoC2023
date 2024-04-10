@@ -42,25 +42,21 @@ public class Day1 {
         return finalNumber;
     }
     public static int findNumbers(String line){
-        int firstNumber = 0;
-        int lastNumber = 0;
+        String firstNumber = "";
+        String lastNumber = "";
         int finalNumber;
         //finding the numbers of each line and overwriting everytime one appears
         for(int i = 0; i < line.length();i++){
             String character = ""+line.charAt(i);
             String numbers = "123456789";
-
             if (numbers.contains(character)){
-                if (firstNumber == 0){
-                    firstNumber = Integer.parseInt(character);
+                if (firstNumber.isEmpty()){
+                    firstNumber = character;
                 }
-                lastNumber = Integer.parseInt(character);
+                lastNumber = character;
             }
         }
-        String tmp = "";
-        tmp += firstNumber;
-        tmp += lastNumber;
-        finalNumber = Integer.parseInt(tmp);
+        finalNumber = Integer.parseInt(firstNumber + lastNumber);
         return finalNumber;
     }
     public static String wordToNumber(String line){
