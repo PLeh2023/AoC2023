@@ -10,8 +10,8 @@ public class Day4 {
         //valid numbers are 1 and 2 which are representing the problems
         int sumOfPoints = input(1);
         int sumOfCards = input(2);
-        System.out.println(sumOfPoints);
-        System.out.println(sumOfCards);
+        System.out.println("First Problem: " + sumOfPoints);
+        System.out.println("Second Problem: " + sumOfCards);
     }
     public static int input(int choice) throws IOException {
         int sum = 0;
