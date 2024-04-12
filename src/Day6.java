@@ -72,7 +72,7 @@ public class Day6 {
             }
             allChances[k] = chances;
         }
-        //getting the power of all games by multiplying the chances of winning
+        //getting the Power of all games by multiplying the chances of winning
         for (int j : allChances) {
             pow = pow * j;
         }
