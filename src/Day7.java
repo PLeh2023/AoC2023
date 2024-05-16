@@ -3,6 +3,10 @@ import java.util.Arrays;
 
 public class Day7 {
     public static void main(String[] args) throws IOException{
+        //1. Problem:   Sorting the cards with its rank and then multiplying its worth with its sorted place
+        //2. Problem:   The 'J' is now a wildcard which means that it can level up the rank of cards but the solo worth
+        //              of 'J' dropped to lower than '2' which makes the ranking in the same rank category
+        //              as "FIVE OF A KIND" very different from the first problem.
         int num = sortArray(input(),1);
         int num2 = sortArray(input(),2);
         System.out.println(num);
