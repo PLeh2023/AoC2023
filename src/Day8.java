@@ -62,7 +62,7 @@ public class Day8 {
                 steps++;
                 if (directionCounter == direction.length){directionCounter = 0;}
             }
-            if (i == map.length - 1){i = 0;}
+            if (i == map.length - 1){i = -1;}
             if (location.equals("ZZZ")){break;}
         }
 
